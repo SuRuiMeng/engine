@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/playcanvas/engine.git"
+    "url": "git+https://github.com/playcanvas/engine.git"
   },
   "eslintConfig": {
     "extends": "@playcanvas/eslint-config",
@@ -92,5 +92,10 @@
     "test:tsd": "npm run tsd && tsc --pretty false build/playcanvas.d.ts",
     "tsd": "jsdoc -c conf-tsd.json && node tsd.js",
     "unzipbundle": "gzip -x tests/assets/bundle.gz"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "dependencies": {}
 }
