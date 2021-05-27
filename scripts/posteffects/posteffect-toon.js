@@ -38,6 +38,9 @@
             "",
             "uniform sampler2D uColorBuffer;",
             "uniform vec4 camera_params;",
+            "uniform mat4 viewProjectionMatrix;",
+            "uniform mat4 viewProjectionMatrixInverse;",
+            "",
             "varying vec2 vUv0;",
             "varying vec3 worldPostion;",
 
